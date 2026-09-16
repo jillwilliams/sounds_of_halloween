@@ -16,9 +16,13 @@ kits.forEach((kit) => {
     btnEl.addEventListener("click", () => {
         audioEl.play()
 
+    btnEl.addEventListener("click", () => {
+        audioEl.pause()
+
     btnEl.addEventListener("mouseout", () => {
         audioEl.pause()
-    })
+    
+    })})
     })
     window.addEventListener("keydown", (event) => {
         if (event.key === kit.slice(0,1)) {

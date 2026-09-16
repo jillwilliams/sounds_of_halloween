@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: greenyellow;
+}
+
+
+/* text: sounds of halloween */
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    text-shadow: 2px 2px 2px black;
+    font-family: "Nosifer";
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+/* text: click on each image */
+h3 {
+    font-size: 20px;
+    font-family: "Nosifer";
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 20px;
+}
+
+/* the div with all the names in it */
+.container .btn {
+    font-size: 30px;
+    padding: 30px 50px;
+    margin: 20px;
+    background-color: white;
+    border: none;
+    font-family: "Nosifer";
+    text-align: center;
+    min-width: 200px;
+    min-height: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px greenyellow;
+    background-image: url("images/tree.png");
+    background-size: cover;
+    background-position: center;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.container .btn:hover {
+    color: greenyellow;
+    text-shadow: 2px 2px 2px black;
+    scale: 1.1;
+    transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 23px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    .container .btn {
+        font-size: 20px;
+        padding: 10px 15px;
+        margin: 20px;
+        min-width: 200px;
+        height: 150px;
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
